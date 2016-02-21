@@ -1,0 +1,204 @@
+.catalog {
+	position: relative;
+	height: 500px;
+	top: 50px;
+	color: #330033;
+}
+.block {
+	position: absolute;
+	top: 0;
+}
+.block > div {
+	clear: fix;
+	min-height: 510px;
+}
+.block > div > h1 {
+	width: 700px;
+	float: right;
+}
+
+.catalog .nav {
+	width: 390px;
+}
+.catalog .nav > input {
+	display: none;
+}
+.catalog .nav > label {
+	margin: 0 var(--pad);
+	background: #c4c7ca;
+	display: block;
+	padding: 10px 10px;
+	cursor: pointer;
+	font-size: 14px;
+	position: relative;
+	z-index: 3;
+}
+.catalog .nav > label:hover,
+.catalog .nav > input:checked + label{
+	background: #9fa2a4;
+}
+.catalog .nav .block > div {
+	padding: 0 var(--pad);
+	width: 1145px;
+	background: #fff;
+	display: none;
+}
+#kitchen:checked ~ .block > div:nth-of-type(1),
+#furniture:checked ~ .block > div:nth-of-type(2),
+#cupboard:checked ~ .block > div:nth-of-type(3),
+#children:checked ~ .block > div:nth-of-type(4),
+#glass:checked ~ .block > div:nth-of-type(5),
+#matrac:checked ~ .block > div:nth-of-type(6),
+#chair:checked ~ .block > div:nth-of-type(7) {
+	display: block;
+}
+.catalog .nav .block > div h1 {
+	text-align: center;
+	font-size: 18px;
+	padding: 10px;
+	margin: 0;
+}
+.catalog .nav .block > div .image,
+.catalog .nav .block > div .services {
+	width: 700px;
+	float: right;
+}
+
+.catalog .nav .block > div .image .col {
+	width: 230px;
+	float: left;
+	margin-right: 3px;
+}
+.catalog .nav .block > div .image .col a {
+	display: block;
+	background: #000;
+}
+.catalog .nav .block > div .image .col a img {
+	display: block;
+	width: 100%;
+	margin-bottom: 3px;
+	background: #000;
+}
+.catalog .nav .block > div .image a img:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.catalog .nav .block > div .text {
+	clear:both;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.catalog .nav .block > div .findings{
+	margin: 50px 0;
+	padding: 20px 0;
+	text-align: center;
+}
+.catalog .nav .block > div .text a,
+.catalog .nav .block > div .findings a {
+	text-decoration: underline;
+}
+
+.peskostrui img, .photoprint img {
+	width: 100%
+}
+
+.peskostrui a {
+	width: 13%;
+}
+
+.photoprint a {
+	width: 18%;
+}
+
+.cupboards .text p {
+    text-align: center !important;
+}
+.peskostrui, .photoprint {
+	@extend %fl-row-btwn;
+	margin-bottom: 10px;
+}
+
+.services p {
+	line-height: 1.8;
+	text-indent: 20px;
+	text-align: justify;
+	font-size: 14px;
+}
+.services p:first-child {
+	font-size: 18px;
+}
+
+.materialExample {
+    width: 100%;
+		/*height: 30px;*/
+    position: relative;
+}
+
+.materialExample h1 {
+    position: absolute;
+    top: 2px;
+    width: 100%;
+    color: white;
+    font-size: 18px !important;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 !important;
+}
+
+.materialExample a {
+    background-color: rgba(#033, .8);
+    position: absolute;
+    padding: 10px 0;
+    top: 40px;
+    left: 36%;
+    width: 300px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    color: white;
+    text-decoration: none !important;
+}
+
+.materialExample a:hover {
+    background-color: rgba(#033, .9);
+}
+
+.materialExample img {
+    width: 100%;
+		height: 100px;
+
+}
+
+.image_row {
+    @extend %fl-row-arnd;
+    margin-bottom: 10px;
+    /*width: 20%;*/
+    height: 150px;
+}
+
+.image_row a, .image_row img {
+    height: 100%;
+}
+
+.image p, .text p {
+    font-family: Verdana;
+    color: #330033;
+    font-size: 14px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+.chair .image .image_row {
+    height: 300px;
+}
+
+.chair .materialExample {
+    height: 150px;
+}
+
+.chair .materialExample a {
+    top: 10px;
+}

@@ -1,0 +1,122 @@
+@alias {
+  fs: font-size;
+  bg: background;
+  fr: font-rage;
+  jc: justify-content;
+  ai: align-items;
+  fd: flex-direction;
+  fw: flex-wrap;
+  lcolumn: lost-column;
+  lcenter: lost-center;
+  lalign: lost-align;
+}
+
+:root {
+  --pad: 4.32vw;
+  --pad2: 7.32vw;
+}
+
+/*  LAYOUT STYLES  */
+%fl-row-btwn {
+  display: flex;
+	jc: space-between;
+}
+
+%fl-row-btwn-end {
+  display: flex;
+  jc: space-between;
+  ai: flex-end;
+}
+
+%fl-row-end-center {
+  display: flex;
+	jc: flex-end;
+  ai: center;
+}
+
+
+%fl-row-arnd {
+  display: flex;
+	jc: space-around;
+}
+
+%fl-row-center {
+  display: flex;
+	jc: center;
+}
+
+%flex-col {
+  display: flex;
+  fd: column;
+}
+
+%flex-col-center {
+  display: flex;
+  fd: column;
+  jc: center;
+}
+
+%flex-col-around {
+  display: flex;
+  fd: column;
+  jc: space-around;
+}
+
+%flex-col-center-center {
+  display: flex;
+  fd: column;
+  jc: center;
+  ai: center;
+}
+
+%flex-col-btwn-center {
+  display: flex;
+  fd: column;
+  jc: space-between;
+  ai: center;
+}
+
+%flex-col-arnd-center {
+  display: flex;
+  fd: column;
+  jc: space-around;
+  ai: center;
+}
+
+%flex-col-arnd-end {
+  display: flex;
+  fd: column;
+  jc: space-around;
+  ai: flex-end;
+}
+
+/*  TEXT STYLES  */
+%text-ssm {
+  fs: responsive 10px 16px;
+  font-range: 960px 1466px;
+}
+
+%text-sm {
+  fs: responsive 14px 20px;
+  font-range: 960px 1466px;
+}
+
+%text-md {
+  fs: responsive 18px 23px;
+  font-range: 960px 1466px;
+}
+
+%text-lg {
+  fs: responsive 20px 26px;
+  font-range: 960px 1466px;
+}
+
+%text-xlg {
+  fs: responsive 24px 31px;
+  font-range: 960px 1466px;
+}
+
+%text-xxlg {
+  fs: responsive 40px 60px;
+  font-range: 960px 1466px;
+}

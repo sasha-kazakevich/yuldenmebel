@@ -1,0 +1,82 @@
+.main .contacts{
+	padding: 0 var(--pad);
+	display: none;
+	color: #330033;
+}
+.main .contacts h1{
+	margin: 0;
+	text-align: center;
+	padding: 40px 0 10px 0;
+	font-size: 18px;
+}
+.main .contacts .contact p {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 10px 0;
+}
+.main .contacts .contact .right {
+	margin-left: 24px;
+	font-weight: normal;
+}
+.main .contacts .contact .right span {
+	font-style: italic;
+}
+.main .contacts .contact p:last-child {
+	text-decoration: underline;
+}
+.main .contacts #map {
+	margin-top: 30px;
+	height: 370px;
+}
+.main form {
+	padding-bottom: 40px;
+}
+.main .contacts .form-row {
+	margin: 0 230px;
+	width: 420px;
+	clear: both;
+	text-align: right;
+	padding: 8px 0;
+}
+.main .contacts .form-row label {
+	margin-right: 10px;
+	font-size: 14px;
+	vertical-align: top;
+}
+.main .contacts .form-row input,
+.main .contacts .form-row textarea {
+	width: 250px;
+	outline: none;
+	background-color: transparent;
+	border: 1px  solid #aeaeae;
+	resize: none;
+}
+.main .contacts .form-row input:focus,
+.main .contacts .form-row textarea:focus {
+	border: 1px solid #9abffe;
+	box-shadow: 0 0 3px;
+}
+.main .contacts .form-row button {
+	width: 250px;
+	background: #d24a43;
+	color: #fff;
+	font-size: 18px;
+	border: 1px solid #d24a43;
+	padding: 9px 0;
+	transition: transform .3s;
+}
+.main .contacts .form-row button:hover {
+	transform: scale(1.05);
+}
+
+.form-row.error {
+	color: red !important;
+}
+
+.form-row.error input {
+	border: 1px solid red !important;
+}
+
+.main .contacts #pic {
+	display: none;
+}

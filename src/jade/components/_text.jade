@@ -1,0 +1,10 @@
+- var texts = ["Ultra High Glass", "ДСП", "Пластики Arpa hpl"]
+- var links = ["http://avva-minsk.by/catalog/13", "http://by.kronospan-express.com/ru/products/by_category/kronobuild/drevesnostruzhechne-plit#c=32,49,48,47,45,46,5", "http://products.arpaindustriale.com/"]
+.text
+    h1 Образцы материалов
+    each exampleurls, i in material_examples
+        each exampleurl in exampleurls
+            .materialExample
+                h1 #{texts[i]}
+                a(href="#{links[i]}") Посмотреть каталог
+                img(src="#{exampleurl}", style="width: 100%;")

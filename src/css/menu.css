@@ -1,0 +1,27 @@
+.menu {
+	width: 1145px;
+	margin: 0 auto;
+}
+.menu ul {
+	width: 750px;
+	margin: 0 auto;
+}
+.menu ul li {
+	display: inline-block;
+	padding: 5px 50px;
+	cursor: pointer;
+	transition: background-color .3s;
+	font-size: 18px;
+	color: #22313f;
+}
+.menu ul li.active {
+	background: #c0c0be;
+}
+.menu ul li:hover {
+	background: #c0c0be;
+}
+.main {
+	width: 1145px;
+	margin: 0 auto;
+	background: #fff;
+}

@@ -1,0 +1,51 @@
+html, header, footer, main, section {
+	width: 100%;
+	font-family: 'Verdana', sans-serif;
+	color: #000;
+ }
+
+a {
+	color: inherit;
+	text-decoration: none;
+ }
+
+p {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+input:focus, button:focus {
+	outline: 0;
+}
+html {
+	width: 100%;
+}
+body {
+	max-width: 1366px;
+	min-width: 960px;
+	margin: 0 auto;
+	position: relative;
+	background: url("../img/back.jpg");
+	background-color: #000;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#arrowUp {
+	width: 45px;
+	height: 45px;
+	background-image: url("../img/arr.png");
+	background-size: cover;
+	position: fixed;
+	z-index: 1;
+	bottom: 45px;
+	right: 25px;
+}
+
+#arrowUp:hover {
+	background-image: url("../img/arr_hover.png");
+	cursor: pointer;
+}

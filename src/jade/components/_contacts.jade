@@ -1,0 +1,36 @@
+div.contacts.all
+	h1 Контакты
+	.contact
+		p Адрес:
+		p.right Минска область, г. Вилейка ул. Ходьки 2
+		p Телефоны:
+		p.right
+			span Тел/факс 
+			| 801771 222 74
+		p.right
+			span МТС 
+			| 8 029 834 51 93
+		p.right
+			span Велком 
+			| 8 044 746 62 11
+		p Email:
+		p.right yuldenmebel@yandex.by
+	div#map
+	form#contact-form.contact-form(action="")
+		h1 Связаться с нами
+		.form-row
+			label(for="name")|Имя:
+			input#name(form="contact-form",type="text")
+		.form-row
+			label(for="email")|Email:
+			input#email(form="contact-form",type="text")
+		.form-row
+			label(for="number")|Номер телефона:
+			input#number(form="contact-form",type="text")
+		.form-row
+			label(for="message")|Сообщение:
+			textarea#message(form="contact-form",type="text",rows="6")
+		.form-row
+			button(type="submit")|Связаться
+	a#pic(href="img/thank.png",rel="lightgallery")
+		img(src="img/thank.png" alt="thank")

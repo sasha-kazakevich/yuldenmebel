@@ -1,0 +1,21 @@
+mixin collumnGallery(items, title)
+	each col in items
+		.col
+			each item in col
+				a(href="#{item}" rel="lightgallery[#{title}]")
+					img(src="#{item}" alt="#{title}" )
+					
+mixin rowGallery(items, title)
+	each col in items
+		each item in col
+			a(href="#{item}" rel="lightgallery[#{title}]")
+				img(src="#{item}" alt="#{title}" )
+					
+mixin catalogPage(header, items, title, noAdd)
+	h1 #{header}
+
+	.image
+		+collumnGallery(items, title)
+	if(!noAdd)
+		include _text
+		include _findings

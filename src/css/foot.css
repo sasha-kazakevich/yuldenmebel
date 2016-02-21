@@ -1,0 +1,26 @@
+#footer {
+  width: 1145px;
+  margin: 0 auto;
+}
+.foot {
+  @extend %fl-row-btwn;
+  margin: 20px 0;
+  color: #fff;
+  font-size: 12px;
+}
+.foot .half {
+  width: 40%
+}
+.foot .half p:first-child {
+  margin-bottom: 8px;
+}
+.foot .half p:last-child {
+  text-align: center;
+}
+.foot .quarter {
+  width: 15%;
+}
+
+.foot div:last-child p {
+  text-align: right;
+}

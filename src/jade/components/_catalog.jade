@@ -1,0 +1,51 @@
+include _mixins
+div.catalog.all
+    .nav
+        input#kitchen(type="radio",name="block",checked)
+        label(for="kitchen")| Кухни
+        input#furniture(type="radio",name="block")
+        label(for="furniture")| Корпусная мебель
+        input#cupboard(type="radio",name="block")
+        label(for="cupboard")| Шкафы купе
+        input#children(type="radio",name="block")
+        label(for="children")| Мебель для детских
+        input#glass(type="radio",name="block")
+        label(for="glass")| Обработка стекла
+        input#matrac(type="radio",name="block")
+        label(for="matrac")| Ортопедические матрацы
+        input#chair(type="radio",name="block")
+        label(for="chair")| Стулья, кресла
+        .block
+            div.kitchen
+                +catalogPage('Производство кухни под заказ', kitchen, 'kitchen')
+            div.furniture
+                +catalogPage('Производство корпусной мебели под заказ', furniture, 'furniture')
+            div.cupboards
+                +catalogPage('Производство шкафы купе под заказ', cupboards, 'cupboards', true)
+                include _text
+                .text
+                    h1 Пескоструй
+                    .peskostrui
+                        +rowGallery(peskostrui, 'peskostrui')
+                    p Огромное количество рисунков для нанесения на материал вы можете выбрать, если скачаете
+                        a(href="#")
+                            |  наш архив
+                        | .
+                .text
+                    h1 Фотопечать
+                    .photoprint
+                        +rowGallery(photoprint, 'photoprint')
+                    p Любое выбранное Вами изображение может быть нанесено с сайтов
+                        a(href="http://shutterstock.ru/")
+                            |  shutterstock.ru
+                        | .
+                include _findings
+            div.childrens
+                +catalogPage('Производство детских под заказ', childrens, 'childrens')
+            div.glass
+                include _services
+            div.matrac
+                include matrac
+            div.chair
+                include chair
+            include _footer
